@@ -21,12 +21,12 @@ struct Pendulum {
 	}
 
 	void InitCog(CircleShape &upCog, CircleShape &downCog) {
-		upCog.setRadius(150);
-		upCog.setPosition(220, 160);
-		upCog.setOrigin(150, 150);
-		downCog.setRadius(150);
-		downCog.setPosition(330, 370);
-		downCog.setOrigin(150, 150);
+		upCog.setRadius(75);
+		upCog.setPosition(150, 150);
+		upCog.setOrigin(75, 75);
+		downCog.setRadius(75);
+		downCog.setPosition(235, 235);
+		downCog.setOrigin(75, 75);
 	}
 
 	void InitPendulum()
@@ -40,20 +40,20 @@ struct Pendulum {
 
 		cargo.setPointCount(4);
 		cargo.setPoint(0, sf::Vector2f(120, 315));
-		cargo.setPoint(1, sf::Vector2f(130, 340));
-		cargo.setPoint(2, sf::Vector2f(120, 380));
-		cargo.setPoint(3, sf::Vector2f(110, 340));
+		cargo.setPoint(1, sf::Vector2f(150, 360));
+		cargo.setPoint(2, sf::Vector2f(120, 410));
+		cargo.setPoint(3, sf::Vector2f(90, 360));
 		PositionConvex(cargo);
 		cargo.setFillColor(Color::Yellow);
 
 		leftPartArrow.setPointCount(3);
-		leftPartArrow.setPoint(0, Vector2f(40, 60));
+		leftPartArrow.setPoint(0, Vector2f(20, 60));
 		leftPartArrow.setPoint(1, Vector2f(120, 0));
 		leftPartArrow.setPoint(2, Vector2f(120, 30));
 		PositionConvex(leftPartArrow);
 
 		rightPartArrow.setPointCount(3);
-		rightPartArrow.setPoint(0, Vector2f(200, 60));
+		rightPartArrow.setPoint(0, Vector2f(220, 60));
 		rightPartArrow.setPoint(1, Vector2f(120, 0));
 		rightPartArrow.setPoint(2, Vector2f(120, 30));
 		PositionConvex(rightPartArrow);

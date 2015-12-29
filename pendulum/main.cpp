@@ -39,8 +39,10 @@ int main() {
 	settings.antialiasingLevel = 8;
 
 	Texture upCogwheel, downCogwheel;
-	upCogwheel.loadFromFile("images/blackCog.psd");
-	downCogwheel.loadFromFile("images/greenCog.psd");
+	
+	downCogwheel.loadFromFile("./images/greenCog.png");
+	upCogwheel.loadFromFile("./images/blackCog.png");
+	
 	pendulum.upCog.setTexture(&upCogwheel);
 	pendulum.downCog.setTexture(&downCogwheel);
 
